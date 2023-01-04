@@ -8,12 +8,17 @@ public class KeyScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        XRGrabInteractable grabbable = GetComponent<XRGrabInteractable>();
+        grabbable.activated.AddListener(KeyActivate);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+    public void KeyActivate(ActivateEventArgs arg)
+    {
+
     }
 }
