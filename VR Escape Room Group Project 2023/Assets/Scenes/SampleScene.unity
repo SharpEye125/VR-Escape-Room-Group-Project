@@ -552,7 +552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91a574b89ad62164793513ab3900b8fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 7936960702840000467, guid: 7f54ad02dbb511943ae7932f80eeca6f, type: 3}
+  bullet: {fileID: 7936960702840000467, guid: a627a6c94c2fc21439875db7e2b2e4f3, type: 3}
   spawnPoint: {fileID: 242494867}
   fireSpeed: 20
 --- !u!54 &25637495
