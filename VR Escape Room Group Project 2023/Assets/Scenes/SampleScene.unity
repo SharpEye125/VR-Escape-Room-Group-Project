@@ -7796,7 +7796,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 572681933}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54fb8b211dac03a48bd3676627f66e68, type: 3}
+  m_Script: {fileID: 11500000, guid: fec19f395337fca41b269dec75c41d3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pinchAnimationAction:
@@ -7805,7 +7805,7 @@ MonoBehaviour:
       m_Name: Pinch Animation
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 28c3d222-89f8-4276-990b-12c2f54d057b
+      m_Id: e96c1fad-9a90-45fc-9be1-c211a401ba76
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -7817,7 +7817,7 @@ MonoBehaviour:
       m_Name: Grip Animation
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 689c1736-9298-444d-893f-60fa95a3217b
+      m_Id: e1532f0c-319e-4f63-8ee4-8d0eb4881b43
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -8032,10 +8032,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 651810846}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14f5ad8a0fa5eaa45be2fb5e8cfb2230, type: 3}
+  m_Script: {fileID: 11500000, guid: 45a902732b86f204f892aaaeab06fce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5461061190947004118, guid: ee22fb2d621432e45ab40a09c345f485, type: 3}
+  prefab: {fileID: 1445429229}
   defaultPrefab: {fileID: 7947812680047643037}
   spawnPoint: {fileID: 760295890}
 --- !u!1 &657723038
@@ -9846,10 +9846,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1235846179}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14f5ad8a0fa5eaa45be2fb5e8cfb2230, type: 3}
+  m_Script: {fileID: 11500000, guid: 45a902732b86f204f892aaaeab06fce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5461061190947004118, guid: ee22fb2d621432e45ab40a09c345f485, type: 3}
+  prefab: {fileID: 1445429229}
   defaultPrefab: {fileID: 0}
   spawnPoint: {fileID: 760295890}
 --- !u!1 &1246580816
@@ -11040,6 +11040,11 @@ Transform:
   m_Father: {fileID: 2124776532}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1445429229 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5461061190947004118, guid: ee22fb2d621432e45ab40a09c345f485, type: 3}
+  m_PrefabInstance: {fileID: 5461061191724627422}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1487131725
 GameObject:
   m_ObjectHideFlags: 0
@@ -16569,7 +16574,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1776908638}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54fb8b211dac03a48bd3676627f66e68, type: 3}
+  m_Script: {fileID: 11500000, guid: fec19f395337fca41b269dec75c41d3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pinchAnimationAction:
@@ -16578,7 +16583,7 @@ MonoBehaviour:
       m_Name: Pinch Animation
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 14efe549-cd02-4ee2-9ed6-159fa1f8ee94
+      m_Id: d5b4d83d-3a37-4553-91b4-fbeaa4f4dfe3
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -16590,7 +16595,7 @@ MonoBehaviour:
       m_Name: Grip Animation
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 2ea9bb4e-4d82-414a-a58c-39d5b615eb8a
+      m_Id: 7bf8a36f-37f7-4476-8913-a7dc6137bcbd
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
