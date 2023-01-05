@@ -6,13 +6,13 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class KeyScript : MonoBehaviour
 {
     [SerializeField] bool inKeySlot = false;
-
-    public GameObject prefab;
+    GameObject keyInTheSlot;
+    public GameObject prefabTrophy;
     // Start is called before the first frame update
     void Start()
     {
-        XRGrabInteractable grabbable = GetComponent<XRGrabInteractable>();
-        grabbable.activated.AddListener(KeyActivate);
+        //XRGrabInteractable grabbable = GetComponent<XRGrabInteractable>();
+        //grabbable.activated.AddListener(KeyActivate);
     }
 
     // Update is called once per frame
@@ -22,23 +22,27 @@ public class KeyScript : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Key Slot"))
+        if (other.CompareTag("Key"))
         {
             inKeySlot = true;
+            keyInTheSlot = other.gameObject;
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if(other.CompareTag("Key Slot"))
+        if(other.CompareTag("Key"))
         {
             inKeySlot = false;
         }
     }
-    public void KeyActivate(ActivateEventArgs arg)
+    public void SpawnTrophy()
     {
-        if (inKeySlot == true)
+        if (inKeySlot)
         {
-            Instantiate(prefab, transform.position + new Vector3(0, 5, 0), transform.rotation.normalized);
+            Instantiate(prefabTrophy, transform.position + new Vector3(0, 1, 0), prefabTrophy.transform.rotation);
+            Destroy(keyInTheSlot);
+            Destroy(gameObject);
         }
+
     }
 }
