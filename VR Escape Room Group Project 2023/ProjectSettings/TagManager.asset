@@ -7,6 +7,8 @@ TagManager:
   - Duplicatable
   - Right Hand
   - Left Hand
+  - Key Slot
+  - Key
   layers:
   - Default
   - TransparentFX
