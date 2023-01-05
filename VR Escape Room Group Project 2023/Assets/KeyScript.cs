@@ -5,8 +5,9 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class KeyScript : MonoBehaviour
 {
-    bool inKeySlot = false;
-    GameObject prefab;
+    [SerializeField] bool inKeySlot = false;
+
+    public GameObject prefab;
     // Start is called before the first frame update
     void Start()
     {
