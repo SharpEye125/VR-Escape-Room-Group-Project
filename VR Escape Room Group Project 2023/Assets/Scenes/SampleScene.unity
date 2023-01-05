@@ -16511,6 +16511,7 @@ GameObject:
   - component: {fileID: 1677509224}
   - component: {fileID: 1677509223}
   - component: {fileID: 1677509222}
+  - component: {fileID: 1677509227}
   m_Layer: 0
   m_Name: XR Key Socket
   m_TagString: Key Slot
@@ -16535,7 +16536,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 4294967268
+    m_Bits: 4294967264
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -16547,7 +16548,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1677509227}
+        m_TargetAssemblyTypeName: KeyScript, Assembly-CSharp
+        m_MethodName: SpawnTrophy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -16647,6 +16660,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1677509227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677509221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aee8bf0828983ab4f9190e162809e484, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inKeySlot: 0
+  prefabTrophy: {fileID: 8028206474010006180, guid: 200ee74195318f54cbb1affe516035d0, type: 3}
 --- !u!1001 &1776908636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18605,7 +18632,6 @@ GameObject:
   - component: {fileID: 3587051663594460349}
   - component: {fileID: 3587051663594460350}
   - component: {fileID: 3587051663594460344}
-  - component: {fileID: 3587051663594460352}
   m_Layer: 7
   m_Name: Key
   m_TagString: Duplicatable
@@ -18613,20 +18639,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &3587051663594460352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3587051663594460351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aee8bf0828983ab4f9190e162809e484, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inKeySlot: 0
-  prefab: {fileID: 8028206474010006180, guid: 200ee74195318f54cbb1affe516035d0, type: 3}
 --- !u!1001 &4456457053897718612
 PrefabInstance:
   m_ObjectHideFlags: 0
