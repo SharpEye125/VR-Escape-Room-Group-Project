@@ -1482,7 +1482,7 @@ GameObject:
   - component: {fileID: 176005194}
   - component: {fileID: 176005193}
   - component: {fileID: 176005196}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1695,7 +1695,7 @@ GameObject:
   - component: {fileID: 256754539}
   - component: {fileID: 256754538}
   - component: {fileID: 256754541}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1877,7 +1877,7 @@ GameObject:
   - component: {fileID: 286186863}
   - component: {fileID: 286186862}
   - component: {fileID: 286186865}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7634,7 +7634,7 @@ GameObject:
   - component: {fileID: 484601427}
   - component: {fileID: 484601426}
   - component: {fileID: 484601425}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8214,7 +8214,7 @@ GameObject:
   - component: {fileID: 773075469}
   - component: {fileID: 773075468}
   - component: {fileID: 773075471}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9429,7 +9429,7 @@ GameObject:
   - component: {fileID: 1128989795}
   - component: {fileID: 1128989794}
   - component: {fileID: 1128989797}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10084,7 +10084,7 @@ GameObject:
   - component: {fileID: 1251830959}
   - component: {fileID: 1251830958}
   - component: {fileID: 1251830961}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10641,7 +10641,7 @@ GameObject:
   - component: {fileID: 1330204548}
   - component: {fileID: 1330204547}
   - component: {fileID: 1330204550}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16359,7 +16359,7 @@ GameObject:
   - component: {fileID: 1550542246}
   - component: {fileID: 1550542245}
   - component: {fileID: 1550542244}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Teleportation Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16926,7 +16926,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1800262534}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Geometry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16970,7 +16970,7 @@ GameObject:
   - component: {fileID: 1869376583}
   - component: {fileID: 1869376582}
   - component: {fileID: 1869376585}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18078,7 +18078,7 @@ GameObject:
   - component: {fileID: 2123527186}
   - component: {fileID: 2123527185}
   - component: {fileID: 2123527188}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18260,7 +18260,7 @@ GameObject:
   - component: {fileID: 2124776530}
   - component: {fileID: 2124776529}
   - component: {fileID: 2124776528}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Teleportation Anchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
