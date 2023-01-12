@@ -50,15 +50,15 @@ public class PuzzleManager : MonoBehaviour
     /*
      This is a list of the stages and what part of the puzzle it refers to.
 
-        -Stage 0: There is nothing complete, you are in the room with the button on the wall and the key in the chest                                                     0     Press button
-        -Stage 1: The button has been pressed so the keyholder appears and awaits the key                                                                                   1     Key slot appears
-        -Stage 2: The key has been inserted so the button,chest and key/keyholder all receed. 3x3 panel moves down for the button panel to enter                               2     Key is entered so button panel appears
-        -Stage 3: The player interacts with the button panel so it proceeds to light up in the order it needs to be done in                                                      3     Button panel Puzzle
-        -Stage 4: The button panel receeds and the 3x3 block covers the exit, then the voice says that it says gullible on the ceiling.                                             4    It says gullible
-        -Stage 5: The player looks up, gets mocked and then all the keys fall from the roof as the 2x2 block moves, the second key slot appears                                         5    Keys fall
-        -Stage 6: Key slot 2 is complete, so key slot 3 appears                                                                                                                            6    Key 2 done
-        -Stage 7: Key slot 3 is complete so key slot 4 appears                                                                                                                                7    Key 3 done
-        -Stage 8: Key slot 4 is complete so all keys and key slots receed and some victory stuff happens.                                                                                       8    Key 4 done, all is done
+        //-Stage 0: There is nothing complete, you are in the room with the button on the wall and the key in the chest                                                     0     Press button
+        //-Stage 1: The button has been pressed so the keyholder appears and awaits the key                                                                                   1     Key slot appears
+        //-Stage 2: The key has been inserted so the button,chest and key/keyholder all receed. 3x3 panel moves down for the button panel to enter                               2     Key is entered so button panel appears
+        //-Stage 3: The player interacts with the button panel so it proceeds to light up in the order it needs to be done in                                                      3     Button panel Puzzle
+        //-Stage 4: The button panel receeds and the 3x3 block covers the exit, then the voice says that it says gullible on the ceiling.                                             4    It says gullible
+       // -Stage 5: The player looks up, gets mocked and then all the keys fall from the roof as the 2x2 block moves, the second key slot appears                                         5    Keys fall
+        //-Stage 6: Key slot 2 is complete, so key slot 3 appears                                                                                                                            6    Key 2 done
+        //-Stage 7: Key slot 3 is complete so key slot 4 appears                                                                                                                                7    Key 3 done
+        //-Stage 8: Key slot 4 is complete so all keys and key slots receed and some victory stuff happens.                                                                                       8    Key 4 done, all is done
     */
 
     void Start()
@@ -72,6 +72,7 @@ public class PuzzleManager : MonoBehaviour
     void Update()
     {
         if(stage ==0)
+        //-Stage 0: There is nothing complete, you are in the room with the button on the wall and the key in the chest                                                     0     Press button
         {
 
         }
@@ -80,14 +81,16 @@ public class PuzzleManager : MonoBehaviour
 
         }
         if (stage == 1)
+        //-Stage 1: The button has been pressed so the keyholder appears and awaits the key                                                                                   1     Key slot appears
         {
-
+            kH1.transform.position += kH1.transform.position - kH1AL;
         }
         else
         {
 
         }
         if (stage == 2)
+        //-Stage 2: The key has been inserted so the button,chest and key/keyholder all receed. 3x3 panel moves down for the button panel to enter                               2     Key is entered so button panel appears
         {
 
         }
@@ -96,6 +99,7 @@ public class PuzzleManager : MonoBehaviour
 
         }
         if (stage == 3)
+        //-Stage 3: The player interacts with the button panel so it proceeds to light up in the order it needs to be done in                                                      3     Button panel Puzzle
         {
 
         }
@@ -103,7 +107,44 @@ public class PuzzleManager : MonoBehaviour
         {
 
         }
-        if (stage == 0)
+        if (stage == 4)
+        //-Stage 4: The button panel receeds and the 3x3 block covers the exit, then the voice says that it says gullible on the ceiling.                                             4    It says gullible
+        {
+
+        }
+        else
+        {
+
+        }
+        if (stage == 5)
+        // -Stage 5: The player looks up, gets mocked and then all the keys fall from the roof as the 2x2 block moves, the second key slot appears                                         5    Keys fall
+        {
+
+        }
+        else
+        {
+
+        }
+        if (stage == 6)
+        //-Stage 6: Key slot 2 is complete, so key slot 3 appears                                                                                                                            6    Key 2 done
+        {
+
+        }
+        else
+        {
+
+        }
+        if (stage == 7)
+        //-Stage 7: Key slot 3 is complete so key slot 4 appears                                                                                                                                7    Key 3 done
+        {
+
+        }
+        else
+        {
+
+        }
+        if (stage == 8)
+        //-Stage 8: Key slot 4 is complete so all keys and key slots receed and some victory stuff happens.                                                                                       8    Key 4 done, all is done
         {
 
         }
