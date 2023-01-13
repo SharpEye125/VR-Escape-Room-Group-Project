@@ -7,9 +7,10 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class VRDistanceForceLetGo : MonoBehaviour
 {
+    public float maxDistance = 1f;
     public XRDirectInteractor myHandInteractor;
     public XRRayInteractor myRayInteractor;
-    //GameObject grabbedObject;
+    GameObject grabbedObject;
 
     // Start is called before the first frame update
     void Start()
@@ -18,13 +19,21 @@ public class VRDistanceForceLetGo : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        if (grabbedObject.layer == 7 && Vector3.Distance(grabbedObject.transform.position, transform.position) > maxDistance && grabbedObject != null)
+        {
+            myHandInteractor.allowSelect = false;
+            grabbedObject = null;
+            //myRayInteractor.allowSelect = false;
+        }
     }
     private void OnTriggerStay(Collider other)
     {
-        
+        if (other.gameObject.layer == 7)
+        {
+            grabbedObject = other.gameObject;
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -36,10 +45,6 @@ public class VRDistanceForceLetGo : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.layer == 7 && other.gameObject == other.gameObject)
-        {
-            myHandInteractor.allowSelect = false;
-            //myRayInteractor.allowSelect = false;
-        }
+        
     }
 }
