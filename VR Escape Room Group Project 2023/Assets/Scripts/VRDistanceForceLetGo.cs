@@ -21,9 +21,10 @@ public class VRDistanceForceLetGo : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (grabbedObject.layer == 7 && Vector3.Distance(grabbedObject.transform.position, transform.position) > maxDistance)
+        if (grabbedObject.layer == 7 && Vector3.Distance(grabbedObject.transform.position, transform.position) > maxDistance && grabbedObject != null)
         {
             myHandInteractor.allowSelect = false;
+            grabbedObject = null;
             //myRayInteractor.allowSelect = false;
         }
     }
@@ -44,6 +45,6 @@ public class VRDistanceForceLetGo : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-
+        
     }
 }
