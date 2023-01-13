@@ -9,6 +9,7 @@ public class VRDistanceForceLetGo : MonoBehaviour
 {
     public XRDirectInteractor myHandInteractor;
     public XRRayInteractor myRayInteractor;
+    //GameObject grabbedObject;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,10 @@ public class VRDistanceForceLetGo : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        
+    }
+    private void OnTriggerStay(Collider other)
     {
         
     }
@@ -31,7 +36,7 @@ public class VRDistanceForceLetGo : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.layer == 7)
+        if (other.gameObject.layer == 7 && other.gameObject == other.gameObject)
         {
             myHandInteractor.allowSelect = false;
             //myRayInteractor.allowSelect = false;
