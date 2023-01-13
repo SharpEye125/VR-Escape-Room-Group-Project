@@ -80,6 +80,51 @@ public class PuzzleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        PositionManager();
+        if(stage == 0)
+        {
+            bA = true;
+            dA = true;
+
+         if(b.GetComponentInChildren<Thebutton>().pressed == true)
+            {
+                stage = 1;
+            }
+        }
+        if(stage == 1)
+        {
+            bA = false;
+            kH1A = true;
+
+            // if(KEY 1 INSERTED)
+           // {
+           //    stage = 2;
+          //  }
+        }
+        if(stage == 2)
+        {
+            kH1A = false;
+            dA = false;
+            p3x3A = true;
+            bP1A = true;
+
+            /*if(bP1.complete == true)
+            {
+               stage = 3;
+            }*/
+        }
+        if(stage == 3)
+        {
+            p3x3A = false;
+            bP1A = false;
+            //It says gullible on the ceiling
+
+
+        }
+    }
+
+    private void PositionManager()
+    {
         //BUTTON
         if (bA == true)
         {
