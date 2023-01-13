@@ -7,6 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class VRDistanceForceLetGo : MonoBehaviour
 {
+    public float maxDistance = 1f;
     public XRDirectInteractor myHandInteractor;
     public XRRayInteractor myRayInteractor;
     //GameObject grabbedObject;
@@ -36,7 +37,7 @@ public class VRDistanceForceLetGo : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.layer == 7 && other.gameObject == other.gameObject)
+        if (other.gameObject.layer == 7 && Vector3.Distance(other.gameObject.transform.position, transform.position) > maxDistance)
         {
             myHandInteractor.allowSelect = false;
             //myRayInteractor.allowSelect = false;
