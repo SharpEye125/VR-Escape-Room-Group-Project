@@ -26,7 +26,7 @@ public class VRDistanceForceLetGo : MonoBehaviour
         if (other.gameObject.layer == 7)
         {
             myHandInteractor.allowSelect = true;
-            myRayInteractor.allowSelect = true;
+            //myRayInteractor.allowSelect = true;
         }
     }
     private void OnTriggerExit(Collider other)
@@ -34,7 +34,7 @@ public class VRDistanceForceLetGo : MonoBehaviour
         if (other.gameObject.layer == 7)
         {
             myHandInteractor.allowSelect = false;
-            myRayInteractor.allowSelect = false;
+            //myRayInteractor.allowSelect = false;
         }
     }
 }
