@@ -29,6 +29,6 @@ public class GameManager : MonoBehaviour
         var minutes = Mathf.FloorToInt(gameTime / 60);
         var seconds = Mathf.FloorToInt(gameTime - minutes * 60);
 
-        string gameTimeClockDisplay = string.Format()
+       // string gameTimeClockDisplay = string.Format();
     }
 }
