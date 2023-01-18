@@ -31,7 +31,7 @@ public class ButtonPanelGod : MonoBehaviour
     {
         if(active == true)
         {
-            if(count=<difcount)
+            if(count<=difcount)
             timer += Time.deltaTime;
             if(timer>=delay)
             {
