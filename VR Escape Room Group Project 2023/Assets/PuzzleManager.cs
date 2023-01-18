@@ -123,7 +123,7 @@ public class PuzzleManager : MonoBehaviour
         }
         if(stage == 4)
         {
-            p2x2++
+            
         }
     }
 
