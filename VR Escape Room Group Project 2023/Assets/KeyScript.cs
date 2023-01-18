@@ -38,7 +38,7 @@ public class KeyScript : MonoBehaviour
     }
     public void SpawnTrophy()
     {
-        if (inKeySlot)
+        if (inKeySlot && prefabTrophy != null)
         {
             Instantiate(prefabTrophy, transform.position + new Vector3(0, 1, 0), prefabTrophy.transform.rotation);
             Destroy(keyInTheSlot);
