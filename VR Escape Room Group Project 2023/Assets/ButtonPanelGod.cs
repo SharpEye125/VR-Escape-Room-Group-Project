@@ -12,7 +12,7 @@ public class ButtonPanelGod : MonoBehaviour
 
     public bool wait;
 
-    public bool ran;
+    public int ran;
 
     public float timer;
 
@@ -20,6 +20,19 @@ public class ButtonPanelGod : MonoBehaviour
 
     public int difcount;
     public int count;
+
+    public int pos1;
+
+    public int pos2;
+
+    public int pos3;
+
+    public int pos4;
+
+    public int pos5;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,14 +42,56 @@ public class ButtonPanelGod : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(active == true)
+        if (active == true)
         {
-            if(count<=difcount)
-            timer += Time.deltaTime;
-            if(timer>=delay)
+            if (wait == false)
             {
+                if (count <= difcount)
+                {
+                    timer += Time.deltaTime;
+                    if (timer >= delay)
+                    {
 
+                        ran = Random.Range(1, 4);
+                        if (ran == 1)
+                        {
+
+                        }
+                        if (ran == 2)
+                        {
+
+                        }
+                        if (ran == 3)
+                        {
+
+                        }
+                        if(count == 1)
+                        {
+                            pos1 = ran;
+                        }
+                        if (count == 2)
+                        {
+                            pos2 = ran;
+                        }
+                        if (count == 3)
+                        {
+                            pos3 = ran;
+                        }
+                        if (count == 4)
+                        {
+                            pos4 = ran;
+                        }
+                        if (count == 5)
+                        {
+                            pos5 = ran;
+                        }
+
+                        count += 1;
+                        timer = 0;
+                    }
+                }
             }
+            
         }
     }
 }
