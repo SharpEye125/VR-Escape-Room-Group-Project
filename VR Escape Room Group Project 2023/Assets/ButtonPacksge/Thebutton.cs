@@ -57,6 +57,8 @@ public class Thebutton : MonoBehaviour
                 clicky = false;
                 press.pitch = 1 * Random.Range(.8f, 1.2f);
                 press.Play();
+                //Changes Current Puzzle Stage:
+                FindObjectOfType<PuzzleManager>().stage = 1;
             }
         }
         else
@@ -66,7 +68,7 @@ public class Thebutton : MonoBehaviour
             if (pressed== false && clicky == false)
             {
                 clicky = true;
-               press.pitch = 1 * Random.Range(.8f, 1.2f);
+                press.pitch = 1 * Random.Range(.8f, 1.2f);
                 press.Play();
             }
         }
