@@ -58,7 +58,7 @@ public class Thebutton : MonoBehaviour
                 press.pitch = 1 * Random.Range(.8f, 1.2f);
                 press.Play();
                 //Changes Current Puzzle Stage:
-                FindObjectOfType<PuzzleManager>().stage = 1;
+                //FindObjectOfType<PuzzleManager>().stage = 1;
             }
         }
         else
