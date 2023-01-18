@@ -15,9 +15,17 @@ public class lookcheck : MonoBehaviour
     {
         
     }
-    public void OnCollisionEnter(Collision col)
+    public void OnTriggerStay(Collider col)
     {
-        Debug.Log("Haha you looked");
+        if(col.gameObject.GetComponent<Look>() != null)
+            {
+            Debug.Log("Appppppple");
+            if(FindObjectOfType<PuzzleManager>().stage == 3)
+            {
+                FindObjectOfType<PuzzleManager>().stage = 4;
+            }
+        }
+        
         
     }
        
