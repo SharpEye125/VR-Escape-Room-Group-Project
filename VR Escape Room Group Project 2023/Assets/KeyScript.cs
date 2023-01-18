@@ -8,6 +8,7 @@ public class KeyScript : MonoBehaviour
     [SerializeField] bool inKeySlot = false;
     GameObject keyInTheSlot;
     public GameObject prefabTrophy;
+    int currentStage;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class KeyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
     private void OnTriggerStay(Collider other)
     {
@@ -44,5 +45,34 @@ public class KeyScript : MonoBehaviour
             Destroy(gameObject);
         }
 
+    }
+    public void KeyInsertDynamic()
+    {
+        //Checks current stage and sets it to easier to type variable
+        currentStage = FindObjectOfType<PuzzleManager>().stage;
+        //In hopes to use 1 function for all keys, this checks the current stage the game is at and sets it to the next stage
+        switch (currentStage)
+        {
+            case 1:
+                FindObjectOfType<PuzzleManager>().stage = 2;
+                Destroy(keyInTheSlot);
+                Destroy(gameObject);
+                break;
+            case 5:
+                FindObjectOfType<PuzzleManager>().stage = 6;
+                Destroy(keyInTheSlot);
+                Destroy(gameObject);
+                break;
+            case 6:
+                FindObjectOfType<PuzzleManager>().stage = 7;
+                Destroy(keyInTheSlot);
+                Destroy(gameObject);
+                break;
+            case 7:
+                FindObjectOfType<PuzzleManager>().stage = 8;
+                Destroy(keyInTheSlot);
+                Destroy(gameObject);
+                break;
+        }
     }
 }
