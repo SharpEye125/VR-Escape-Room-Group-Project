@@ -31,7 +31,7 @@ public class ButtonPanelGod : MonoBehaviour
 
     public int pos5;
 
-
+    public int tracker;
 
     // Start is called before the first frame update
     void Start()
@@ -90,8 +90,73 @@ public class ButtonPanelGod : MonoBehaviour
                         timer = 0;
                     }
                 }
+                else
+                {
+                    wait = true;
+                    tracker = 1;
+                }
+            }
+            else
+            {
+                bool use1 = button1.GetComponent<PanelButton>().pressed;
+                bool use2 = button2.GetComponent<PanelButton>().pressed;
+                bool use3 = button3.GetComponent<PanelButton>().pressed;
+
+                if (tracker <= difcount)
+                {
+                    if (tracker == 1)
+                    {
+                        if (use1 == true && pos1 == 1 || use2 == true && pos1 == 2 || use3 == true && pos1 == 3)
+                        {
+                            //good job
+                            tracker = 2;
+                        }
+                        else if (use1 || use2 || use3)
+                        {
+                            YouMessedUp();
+                        }
+
+                    }
+                    if (tracker == 2)
+                    {
+                        if (use1 == true && pos2 == 1 || use2 == true && pos2 == 2 || use3 == true && pos2 == 3)
+                        {
+                            //good job
+                            tracker = 3;
+                        }
+                        else if (use1 || use2 || use3)
+                        {
+                            YouMessedUp();
+                        }
+                    }
+                    if (tracker == 3)
+                    {
+                        if (use1 == true && pos3 == 1 || use2 == true && pos3 == 2 || use3 == true && pos3 == 3)
+                        {
+                            //good job
+                            tracker = 4;
+                        }
+                        else if (use1 || use2 || use3)
+                        {
+                            YouMessedUp();
+                        }
+                    }
+                }
+                else
+                {
+                    //you win?
+                }
             }
             
         }
+    }
+
+    private void YouMessedUp()
+    {
+        //you messed up
+        tracker = 1;
+        wait = false;
+        count = 0;
+        difcount = 3;
     }
 }
