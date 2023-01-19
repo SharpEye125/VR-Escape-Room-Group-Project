@@ -5,6 +5,9 @@ using UnityEngine;
 public class PanelButton : MonoBehaviour
 {
     public bool pressed;
+    public GameObject VFX;
+    public int dur;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,5 +18,25 @@ public class PanelButton : MonoBehaviour
     void Update()
     {
         
+    }
+    public void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag == "Hand")
+        {
+            pressed = true;
+            GameObject explosion = Instantiate(VFX, transform.position, transform.rotation);
+            Destroy(explosion, dur);
+
+        }
+    } 
+    public void OnTriggerExit(Collider col)
+    {
+        if (col.gameObject.tag == "Hand")
+        {
+            pressed = false;
+
+        }
+
+
     }
 }
