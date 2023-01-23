@@ -20,9 +20,9 @@ public class lookcheck : MonoBehaviour
         if(col.gameObject.GetComponent<Look>() != null)
             {
             Debug.Log("Appppppple");
-            if(FindObjectOfType<PuzzleManager>().stage == 3)
+            if(FindObjectOfType<PuzzleManager>().stage == 4)
             {
-                FindObjectOfType<PuzzleManager>().stage = 4;
+                FindObjectOfType<PuzzleManager>().stage = 5;
             }
         }
         
