@@ -1606,7 +1606,7 @@ MonoBehaviour:
   stage: 0
   itSaysGullible: {fileID: 0}
   haYouLooked: {fileID: 0}
-  speaker: {fileID: 0}
+  speaker: {fileID: 1406382348}
   b: {fileID: 2956016496427709427}
   bAL: {fileID: 1150690154}
   bIL: {fileID: 1482077938}
@@ -2198,7 +2198,7 @@ GameObject:
   - component: {fileID: 1406382349}
   - component: {fileID: 1406382348}
   m_Layer: 6
-  m_Name: Cube
+  m_Name: Speaker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
