@@ -124,22 +124,21 @@ public class PuzzleManager : MonoBehaviour
         if (stage == 4)
         {
             p2x2A = true;
-
-        }
-        if (stage == 5)
-        {
-            p2x2A = false;
             kH2A = true;
         }
-        if (stage == 6)
+        if (stage == 5)
         {
             kH2A = false;
             kH3A = true;
         }
-        if (stage == 7)
+        if (stage == 6)
         {
             kH3A = false;
             kH4A = true;
+        }
+        if (stage == 7)
+        {
+            kH4A = false;
         }
     }
 

@@ -22,6 +22,7 @@ public class lookcheck : MonoBehaviour
             Debug.Log("Appppppple");
             if(FindObjectOfType<PuzzleManager>().stage == 3)
             {
+                Debug.Log("You Looked!");
                 FindObjectOfType<PuzzleManager>().stage = 4;
             }
         }
