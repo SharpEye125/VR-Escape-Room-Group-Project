@@ -115,6 +115,7 @@ public class PuzzleManager : MonoBehaviour
         }
         if (stage == 3)
         {
+            Destroy(d);
             p3x3A = false;
             bP1A = false;
             //It says gullible on the ceiling
