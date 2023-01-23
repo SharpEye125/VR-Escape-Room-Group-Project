@@ -77,7 +77,7 @@ public class ButtonPanel1x3 : MonoBehaviour
     }
     public bool TaskFulfilled()
     {
-        if (isPressed1 && isPressed2 && isPressed3)
+        if (isPressed1 == true && isPressed2 == true && isPressed3 == true)
         {
             return true;
         }
