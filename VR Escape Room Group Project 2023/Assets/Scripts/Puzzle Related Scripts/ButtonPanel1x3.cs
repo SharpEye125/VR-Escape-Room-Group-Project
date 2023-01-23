@@ -27,10 +27,10 @@ public class ButtonPanel1x3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (TaskFulfilled() == true)
-        {
-            FindObjectOfType<PuzzleManager>().stage = 3;
-        }
+        //if (TaskFulfilled() == true)
+        //{
+            //FindObjectOfType<PuzzleManager>().stage = 3;
+        //}
     }
 
 
@@ -69,6 +69,7 @@ public class ButtonPanel1x3 : MonoBehaviour
         {
             isPressed3 = true;
             button3.GetComponent<MeshRenderer>().material = correctMat;
+            FindObjectOfType<PuzzleManager>().stage = 3;
         }
         else
         {
