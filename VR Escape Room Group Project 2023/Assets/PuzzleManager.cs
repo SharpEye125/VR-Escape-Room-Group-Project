@@ -5,6 +5,9 @@ using UnityEngine;
 public class PuzzleManager : MonoBehaviour
 {
     public int stage;
+    public AudioClip itSaysGullible;
+    public AudioClip haYouLooked;
+    public AudioSource speaker;
 
     public GameObject b;
     public GameObject bAL;
@@ -118,10 +121,13 @@ public class PuzzleManager : MonoBehaviour
             p3x3A = false;
             bP1A = false;
             //It says gullible on the ceiling
+            //speaker.PlayOneShot(itSaysGullible);
+            
 
         }
         if (stage == 4)
         {
+            //speaker.PlayOneShot(haYouLooked);
             p2x2A = true;
             kH2A = true;
         }
