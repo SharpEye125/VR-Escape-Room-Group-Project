@@ -118,10 +118,6 @@ public class PuzzleManager : MonoBehaviour
             p3x3A = false;
             bP1A = false;
             //It says gullible on the ceiling
-            if(d != null)
-            {
-                Destroy(d);
-            }
 
         }
         if (stage == 4)
