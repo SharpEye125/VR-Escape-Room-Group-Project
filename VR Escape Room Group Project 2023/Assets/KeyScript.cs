@@ -59,18 +59,18 @@ public class KeyScript : MonoBehaviour
                 Destroy(keyInTheSlot);
                 Destroy(gameObject);
                 break;
-            case 5:
-                FindObjectOfType<PuzzleManager>().stage = 4;
-                Destroy(keyInTheSlot);
-                Destroy(gameObject);
-                break;
-            case 6:
+            case 4:
                 FindObjectOfType<PuzzleManager>().stage = 5;
                 Destroy(keyInTheSlot);
                 Destroy(gameObject);
                 break;
-            case 7:
+            case 5:
                 FindObjectOfType<PuzzleManager>().stage = 6;
+                Destroy(keyInTheSlot);
+                Destroy(gameObject);
+                break;
+            case 6:
+                FindObjectOfType<PuzzleManager>().stage = 7;
                 Destroy(keyInTheSlot);
                 Destroy(gameObject);
                 break;
