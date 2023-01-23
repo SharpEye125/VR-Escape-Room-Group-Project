@@ -29,7 +29,7 @@ public class ButtonPanel1x3 : MonoBehaviour
     {
         if (TaskFulfilled() == true)
         {
-            FindObjectOfType<PuzzleManager>().stage = 4;
+            FindObjectOfType<PuzzleManager>().stage = 3;
         }
     }
 

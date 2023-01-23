@@ -81,27 +81,27 @@ public class PuzzleManager : MonoBehaviour
     void Update()
     {
         PositionManager();
-        if(stage == 0)
+        if (stage == 0)
         {
             bA = true;
             dA = true;
 
-         if(b.GetComponentInChildren<Thebutton>().pressed == true)
+            if (b.GetComponentInChildren<Thebutton>().pressed == true)
             {
                 stage = 1;
             }
         }
-        if(stage == 1)
+        if (stage == 1)
         {
             bA = false;
             kH1A = true;
 
             // if(KEY 1 INSERTED)
-           // {
-           //    stage = 2;
-          //  }
+            // {
+            //    stage = 2;
+            //  }
         }
-        if(stage == 2)
+        if (stage == 2)
         {
             kH1A = false;
             dA = false;
@@ -113,7 +113,7 @@ public class PuzzleManager : MonoBehaviour
                stage = 3;
             }*/
         }
-        if(stage == 3)
+        if (stage == 3)
         {
             p3x3A = false;
             bP1A = false;
@@ -121,9 +121,25 @@ public class PuzzleManager : MonoBehaviour
 
 
         }
-        if(stage == 4)
+        if (stage == 4)
         {
-            
+            p2x2A = true;
+
+        }
+        if (stage == 5)
+        {
+            p2x2A = false;
+            kH2A = true;
+        }
+        if (stage == 6)
+        {
+            kH2A = false;
+            kH3A = true;
+        }
+        if (stage == 7)
+        {
+            kH3A = false;
+            kH4A = true;
         }
     }
 
