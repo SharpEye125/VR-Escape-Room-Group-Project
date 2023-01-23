@@ -48,6 +48,7 @@ public class KeyScript : MonoBehaviour
     }
     public void KeyInsertDynamic()
     {
+        //This comment is irrelevant
         //Checks current stage and sets it to easier to type variable
         currentStage = FindObjectOfType<PuzzleManager>().stage;
         //In hopes to use 1 function for all keys, this checks the current stage the game is at and sets it to the next stage
