@@ -104,8 +104,8 @@ public class PuzzleManager : MonoBehaviour
         if (stage == 2)
         {
             kH1A = false;
-            dA = false;
             p3x3A = true;
+            dA = false;
             bP1A = true;
 
             /*if(bP1.complete == true)
@@ -115,11 +115,13 @@ public class PuzzleManager : MonoBehaviour
         }
         if (stage == 3)
         {
-            Destroy(d);
             p3x3A = false;
             bP1A = false;
             //It says gullible on the ceiling
-
+            if(d != null)
+            {
+                Destroy(d);
+            }
 
         }
         if (stage == 4)
